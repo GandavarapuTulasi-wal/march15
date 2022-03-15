@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Registration</title>
+  </head>
+  <style>
+    *{
+      margin: 0px;
+    }
+    .card-container{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    .todo-user-input {
+      background-color: white;
+      width: 60%;
+      border-style: solid;
+      border-width: 1px;
+      border-color: #e4e7eb;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 15px;
+    }
+    form{
+      width:400px;
+      background-color: #fff;
+      border-radius: 20px;
+      padding-top:30px;
+    }
+    .card{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      background:linear-gradient(to right,rgb(53, 53, 163),rgb(138, 174, 230));
+      height:100vh;
+    }
+    h1{
+    color:#ffffff;
+    font-weight: 800;
+    margin-bottom: 20px;
+    }
+    button{
+      background-color: rgb(38, 38, 236);
+      border: none;
+      color: #ffffff;
+      font-weight: 600;
+      padding:10px;
+      border-radius: 5px;;
+      margin:10px;
+    }
+  </style>
+  <body>
+    <div class="card">
+    <h1>Registration Form</h1>
+    <form action="/register" method="post" class="card-container">
+      <input placeholder="Enter Username" type="text" name="username" class="todo-user-input"/><br />
+      <input placeholder="Enter Email" type="email" name="email" class="todo-user-input"/><br />
+      <input
+        placeholder="Enter Password"
+        type="password"
+        name="password"
+        class="todo-user-input"
+      /><br />
+      <input type="date" name="date" class="todo-user-input"/><br />
+      <input placeholder="Enter city" type="text" name="city" class="todo-user-input"/><br />
+      <input placeholder="Enter Country" type="text" name="country" class="todo-user-input"/><br />
+      <button>Register</button>
+    </div>
+    </form>
+  </body>
+</html>
