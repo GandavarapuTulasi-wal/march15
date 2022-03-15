@@ -5,10 +5,10 @@
     <title>Registration</title>
   </head>
   <style>
-    *{
+    * {
       margin: 0px;
     }
-    .card-container{
+    .card-container {
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -24,55 +24,71 @@
       margin-top: 10px;
       padding: 15px;
     }
-    form{
-      width:400px;
+    form {
+      width: 400px;
       background-color: #fff;
       border-radius: 20px;
-      padding-top:30px;
+      padding-top: 30px;
     }
-    .card{
+    .card {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      background:linear-gradient(to right,rgb(53, 53, 163),rgb(138, 174, 230));
-      height:100vh;
+      background: linear-gradient(
+        to right,
+        rgb(53, 53, 163),
+        rgb(138, 174, 230)
+      );
+      height: 100vh;
     }
-    h1{
-    color:#ffffff;
-    font-weight: 800;
-    margin-bottom: 20px;
+    h1 {
+      color: #ffffff;
+      font-weight: 800;
+      margin-bottom: 20px;
     }
-    .button{
+    .button {
       background-color: rgb(38, 38, 236);
       border: none;
       color: #ffffff;
       font-weight: 600;
-      padding:10px;
-      border-radius: 5px;;
-      margin:10px;
+      padding: 10px;
+      border-radius: 5px;
+      margin: 10px;
     }
-    .box{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-        margin-top: 20px;
-   }
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
   </style>
   <body>
     <div class="card">
-    <h1>Calculation</h1>
-    <form method="post" class="card-container">
-      <input placeholder="Enter first number" type="number" name="firstno" class="todo-user-input"/><br />
-      <input placeholder="Enter second number" type="number" name="secondno" class="todo-user-input"/><br />
-      <div class="box">
-      <input type="submit" formaction="add" class="button" value="Add"></button>
-      <input type="submit" formaction="multiply" class="button" value="Multiply"></button>
-      <input type="submit" formaction="divide" class="button" value="Divide"></button>
-      <input type="submit" formaction="subtract" class="button" value="Subtract"></button>
-      </div>
+      <h1>Calculation</h1>
+      <form method="post" class="card-container" action="/operation">
+        <input
+          placeholder="Enter first number"
+          type="number"
+          name="firstno"
+          class="todo-user-input"
+        /><br />
+        <input
+          placeholder="Enter second number"
+          type="number"
+          name="secondno"
+          class="todo-user-input"
+        /><br />
+        <select class="todo-user-input" name="operation">
+          <option value="add" selected>Add</option>
+          <option value="multiply">Multiply</option>
+          <option value="divide">Add</option>
+          <option value="subtract">Subtract</option>
+        </select>
+        <button class="button">Calculate</button>
+      </form>
     </div>
-    </form>
+    div>
   </body>
 </html>

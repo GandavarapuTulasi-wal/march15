@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 app.use(express.urlencoded({ extended: true }));
-app.get('/form', function (req, res) {
+app.get('/', function (req, res) {
   console.log(__dirname);
   const completePath = path.join(__dirname, 'registration.html');
   res.sendFile(completePath);
